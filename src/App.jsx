@@ -99,7 +99,7 @@ function App() {
 
 
 useEffect(() => {
-axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${value}&appid=0ead1437d0683ecfc51a745ff6d62409`)
+axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${value}&appid=0ead1437d0683ecfc51a745ff6d62409`)
 .then(response=> {
   setLat(response.data[0].lat);
   setLong(response.data[0].lon);

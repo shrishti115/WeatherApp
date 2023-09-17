@@ -12,7 +12,7 @@ function Weather(props) {
                 <h1 className="city">{props.city}, {props.country}</h1>
                 <div className="sub-section">
                 <h2 className="weather">{props.weather}</h2>
-                <img className="weather-icon" src={`http://openweathermap.org/img/w/${props.icon}.png`} alt="weather-icon"/>
+                <img className="weather-icon" src={`https://openweathermap.org/img/w/${props.icon}.png`} alt="weather-icon"/>
                 </div>
                  <h2 className="date">{DateTime.now().toFormat('cccc, dd LLL')}</h2>
                 
